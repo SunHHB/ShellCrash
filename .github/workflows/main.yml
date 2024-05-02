@@ -47,6 +47,7 @@ jobs:
         rm -fr upx*
     - name: Update
       run: |
+        mkdir -p ./bin/metaorg/
         rm -fr ./bin/metaorg/*
         cp ./tmp/* ./bin/metaorg/
         rm -fr ./tmp
